@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14102443050920" configfile="/TP03-WEB-JSF-FACELETs-E-donnee/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="showTransferResult.xhtml" x="100" y="67" id="pf14891347587410" inlinks="pf14891347587411" path="/showTransferResult.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="transferForm.xhtml" x="108" y="168" id="pf14891347587412" outlinks="pf14891347587411" inlinks="pf14891347587423" path="/transferForm.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="welcomeBank.xhtml" x="105" y="264" id="pf14891347587424" outlinks="pf14891347587423" path="/welcomeBank.xhtml"/>
+  <links id="pf14891347587423" target="pf14891347587412" source="pf14891347587424" outcome="transferForm"/>
+  <links id="pf14891347587411" target="pf14891347587410" source="pf14891347587412" outcome="#{transferBean.performTransfer}"/>
+</pageflow:Pageflow>
